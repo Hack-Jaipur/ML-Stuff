@@ -19,11 +19,5 @@ def voiceinput():
 
 text = voiceinput()
 # text = "i am having fever and some cough"
+
 print(text)
-ps = PorterStemmer()
-data = []
-for i in text.split():
-    temp = ps.stem(i)
-    if len(temp) > 3:
-        data.append(temp)
-print(data)
